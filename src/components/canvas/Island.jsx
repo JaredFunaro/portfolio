@@ -45,7 +45,7 @@ const Island = ({ isMobile }) => {
         /> */}
         <primitive
           object={island.scene}
-          scale={isMobile ? 0.004 : 0.005}
+          scale={isMobile ? 0.002 : 0.005}
           position={isMobile ? [0, -4, -2.2] : [0, -4, 0]}
           rotation={[.04, 0, .04]}
         />
