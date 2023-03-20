@@ -9,8 +9,6 @@ import { slideIn } from "../utils/motion";
 // require('dotenv').config();
 
 const Contact = () => {
-  console.log(import.meta.env.VITE_APP_EMAILJS_SERVICE_ID)
-  console.log('logging');
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",

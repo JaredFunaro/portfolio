@@ -40,12 +40,24 @@ const Ball = (props) => {
   );
 };
 
-const BallCanvas = ({ icon }) => {
+const BallCanvas = ({ icon, tech }) => {
+
+  const handleEnter = () => {
+    // console.log(tech);
+    document.getElementById(tech).style.visibility = 'visible';
+
+  }
+
+  const handleLeave = () => {
+    document.getElementById(tech).style.visibility = 'hidden';
+  }
   return (
     <Canvas
       // frameloop='demand'
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />

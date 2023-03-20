@@ -6,8 +6,22 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Island = ({ isMobile }) => {
+const Island = (props) => {
   const island = useGLTF("./block/scene.gltf");
+  // console.log('this is is mobile', props.isMobile);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+
+  const isMobile = width <= 768;
 
   const ref = useRef();
 
@@ -16,7 +30,9 @@ const Island = ({ isMobile }) => {
   });
 
   return (
-    <mesh ref={ref}>
+    <mesh
+    ref={ref}
+    >
       <spotLight
         position={[0, -20, 20]}
         angle={0.22}
@@ -37,16 +53,10 @@ const Island = ({ isMobile }) => {
       intensity={.1}
       />
       <group>
-        //TRIED TO APPLY ORBIT CONTROLS TO JUST THE DICE TO KEEP PURPLE LIGHT IN PLACE, DIDNT WORK
-        {/* <OrbitControls
-        enableZoom={false}
-        maxPolarAngle={Math.PI / 2}
-        minPolarAngle={Math.PI / 2}
-        /> */}
         <primitive
           object={island.scene}
-          scale={isMobile ? 0.002 : 0.005}
-          position={isMobile ? [0, -4, -2.2] : [0, -4, 0]}
+          scale={isMobile ? 0.0035 : 0.005}
+          position={isMobile ? [0, -3, 0] : [0, -4, 0]}
           rotation={[.04, 0, .04]}
         />
       </group>
@@ -55,8 +65,6 @@ const Island = ({ isMobile }) => {
 };
 
 const IslandScene = () => {
-  //CREATED ANOTHER GROUP IN ORDER TO HAVE A PURPLE LIGHT THAT STAYS IN PLACE,
-  //GIVES CONTRAST TO THE ONE SIDE OF THE CUBE THAT IS LIT UP
   const ref = useRef();
   return (
     <group >
@@ -75,36 +83,12 @@ const IslandScene = () => {
 
 const IslandCanvas = () => {
 
-  // const ref = useRef();
-
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
-
-    // Set the initial value of the `isMobile` state variable
-    setIsMobile(mediaQuery.matches);
-
-    // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    // Remove the listener when the component is unmounted
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);
+  const ref = useRef();
 
 
   return (
 
     <Canvas
-      // frameloop='demand'
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25}}
@@ -117,7 +101,7 @@ const IslandCanvas = () => {
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 2}
           />
-            <IslandScene isMobile={isMobile} />
+            <IslandScene/>
         </group>
       </Suspense>
       <Preload all />
