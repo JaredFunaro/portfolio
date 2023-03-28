@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -13,12 +13,24 @@ import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
+  const ref = useRef();
+
+  useEffect(() => {
+    const handleBlur = () => {
+      ref.current.rotation.x = 0;
+      ref.current.rotation.y = 0;
+    }
+    window.addEventListener('blur', handleBlur);
+    return () => {
+      window.removeEventListener('blur', handleBlur);
+    }
+  })
 
   return (
     <Float speed={5} rotationIntensity={1} floatIntensity={4}>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
-      <mesh castShadow receiveShadow scale={2.75}>
+      <mesh ref={ref} castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
           color='#ab7dd4'
@@ -42,6 +54,7 @@ const Ball = (props) => {
 
 const BallCanvas = ({ icon, tech }) => {
 
+  const ref = useRef();
   const handleEnter = () => {
     // console.log(tech);
     document.getElementById(tech).style.visibility = 'visible';
@@ -51,6 +64,9 @@ const BallCanvas = ({ icon, tech }) => {
   const handleLeave = () => {
     document.getElementById(tech).style.visibility = 'hidden';
   }
+
+
+
   return (
     <Canvas
       // frameloop='demand'
@@ -61,7 +77,7 @@ const BallCanvas = ({ icon, tech }) => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
-        <Ball imgUrl={icon} />
+        <Ball imgUrl={icon}/>
       </Suspense>
 
       <Preload all />

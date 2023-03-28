@@ -53,6 +53,11 @@ const Island = (props) => {
       intensity={.1}
       />
       <group>
+      <OrbitControls
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
         <primitive
           object={island.scene}
           scale={isMobile ? 0.0035 : 0.005}
@@ -65,13 +70,18 @@ const Island = (props) => {
 };
 
 const IslandScene = () => {
-  const ref = useRef();
+
   return (
     <group >
-      <group ref={ref}>
+      <group >
             <pointLight
             intensity={.85}
             position={[10, 0, 0]}
+            color='#c259ff'
+          />
+          <pointLight
+            intensity={.85}
+            position={[-10, 0, 0]}
             color='#c259ff'
           />
       </group>
@@ -83,7 +93,6 @@ const IslandScene = () => {
 
 const IslandCanvas = () => {
 
-  const ref = useRef();
 
 
   return (

@@ -179,7 +179,7 @@ const projects = [
       "Web-based e-commerce platform that allows users to search, edit, and add products to their shopping cart from an API that I designed and hosted on AWS",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
@@ -200,15 +200,15 @@ const projects = [
       "Web application that utilizes Spotify OAuth and API. Once setlists are created, an algorithm grades transitions between songs and allows users to edit and export to Spotify",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "RestAPI",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "SCSS",
         color: "pink-text-gradient",
       },
     ],

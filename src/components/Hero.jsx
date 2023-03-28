@@ -16,7 +16,7 @@ const Hero = () => {
       window.scrollBy(0, 30);
       if (tracker === 2) {
         // document.getElementById("overview").scrollIntoView();
-        location.href = '#';
+        // location.href = '#';
         location.href = '#about';
       }
       setTracker(tracker+1);
