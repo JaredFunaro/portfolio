@@ -5,22 +5,10 @@ import { IslandCanvas } from "./canvas";
 import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
-  const [tracker, setTracker] = useState(0);
   const navigate = useNavigate();
 
   const mouse = () => {
-
-    if (tracker < 3) {
-
-
-      window.scrollBy(0, 30);
-      if (tracker === 2) {
-        // document.getElementById("overview").scrollIntoView();
-        // location.href = '#';
-        location.href = '#about';
-      }
-      setTracker(tracker+1);
-    }
+    location.href = '#about';
   }
 
   const [width, setWidth] = useState(window.innerWidth);
@@ -130,4 +118,3 @@ const Hero = () => {
 
 export default Hero;
 
-//I am a fullstack developer with a passion for <br className='sm:block hidden'/>creating memorable user experiences
