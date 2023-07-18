@@ -82,7 +82,7 @@ const Works = () => {
         >
           The following projects showcase my skills and technical experience through real-world
           examples. Each project has a brief description and links to the project repo on Github.
-          These reflect not only my ability for front end design, but also my prowess in regards to back end design.
+
         </motion.p>
       </div>
 

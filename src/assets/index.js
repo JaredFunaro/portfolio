@@ -20,11 +20,13 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import postgres from "./tech/postgres.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import hackreactor from "./company/hack-reactor-icon.png";
 import tesla from "./company/tesla.png";
+import worldwide from "./company/worldwideLogo.png";
 
 import atelier from "./atelier.png";
 import mvp from './mvp.png';
@@ -53,9 +55,11 @@ export {
   tailwind,
   typescript,
   threejs,
+  postgres,
   meta,
   shopify,
   hackreactor,
+  worldwide,
   tesla,
   atelier,
   mvp,

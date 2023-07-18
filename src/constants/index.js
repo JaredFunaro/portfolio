@@ -10,6 +10,7 @@ import {
   reactjs,
   redux,
   tailwind,
+  postgres,
   nodejs,
   mongodb,
   git,
@@ -18,6 +19,7 @@ import {
   meta,
   hackreactor,
   tesla,
+  worldwide,
   shopify,
   atelier,
   mvp,
@@ -43,7 +45,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
@@ -51,7 +53,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Graphic Designer",
+    title: "Mobile Developer",
     icon: backend,
   },
   {
@@ -82,6 +84,10 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "React Native",
+    icon: reactjs
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -92,6 +98,10 @@ const technologies = [
   {
     name: "Node JS",
     icon: nodejs,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgres
   },
   {
     name: "MongoDB",
@@ -124,7 +134,7 @@ const experiences = [
     date: "December 2022 - March 2023",
     points: [
       "Developed and maintained web applications using React.js and other related technologies.",
-      "Collaborated with teams consisting of other software engineers utilizing Agile Methodology.",
+      "Exercised teamwork and delegation skills while working with a team of software engineers to build out applications for clients",
       "Implemented responsive design and ensured cross-browser compatibility.",
       "Participated in code reviews and provided constructive feedback to other developers.",
     ],
@@ -142,6 +152,18 @@ const experiences = [
       "Upgraded outdated websites into sleeker, well-polished websites that place an emphasis on user experience."
     ],
   },
+  {
+    title: "Fullstack Software Engineer",
+    company_name: "Worldwide Interactive Services",
+    icon: worldwide,
+    iconBg: "#FFFFFF",
+    date: "July 2023 - Present",
+    points: [
+      "Collaborated with software engineers, designers, QA, and IT to build out applications for clients",
+      "Utilized Agile Methodology in order to ensure efficient workflow between teams",
+      "Created web applications alongside mobile applications for various companies including financial coorporations"
+    ]
+  }
 
 ];
 
