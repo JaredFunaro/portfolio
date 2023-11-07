@@ -30,7 +30,7 @@ import worldwide from "./company/worldwideLogo.png";
 
 import atelier from "./atelier.png";
 import mvp from './mvp.png';
-import tripguide from "./tripguide.png";
+import MillyScreenshot from './MillyScreenshot.png'
 
 
 export {
@@ -63,5 +63,5 @@ export {
   tesla,
   atelier,
   mvp,
-  tripguide,
+  MillyScreenshot,
 };

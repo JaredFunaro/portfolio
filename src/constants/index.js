@@ -23,7 +23,7 @@ import {
   shopify,
   atelier,
   mvp,
-  tripguide,
+  MillyScreenshot,
   threejs,
   logo
 } from "../assets";
@@ -144,7 +144,7 @@ const experiences = [
     company_name: "",
     icon: logo,
     iconBg: "#E6DEDD",
-    date: "March 2023 - Present",
+    date: "March 2023 - June 2023",
     points: [
       "Acquired customers and planned websites tailored to their individual needs.",
       "Created new websites utilizing the most current cutting-edge client-side technology.",
@@ -157,7 +157,7 @@ const experiences = [
     company_name: "Worldwide Interactive Services",
     icon: worldwide,
     iconBg: "#FFFFFF",
-    date: "July 2023 - Present",
+    date: "June 2023 - Present",
     points: [
       "Collaborated with software engineers, designers, QA, and IT to build out applications for clients",
       "Utilized Agile Methodology in order to ensure efficient workflow between teams",
@@ -196,25 +196,25 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Atelier Shopping",
+    name: "Milly Online Banking",
     description:
-      "Web-based e-commerce platform that allows users to search, edit, and add products to their shopping cart from an API that I designed and hosted on AWS",
+      "Milly is a template-style Multi-Page Application (MPA) that establishes secure connections with Financial Institution cores for the seamless transfer of funds.",
     tags: [
       {
         name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "PostgreSQL",
+        name: "Redux Toolkit",
         color: "green-text-gradient",
       },
       {
-        name: "SCSS",
+        name: "TypeScript",
         color: "pink-text-gradient",
       },
     ],
-    image: atelier,
-    source_code_link: "https://github.com/rfe2212-Scarlet-Witch/FEC2212",
+    image: MillyScreenshot,
+    source_code_link: "https://w-w-i-s.com/milly",
   },
   {
     name: "Playlists for Producers",
@@ -237,27 +237,27 @@ const projects = [
     image: mvp,
     source_code_link: "https://github.com/JaredFunaro/PlaylistsForProducers",
   },
-  // {
-  //   name: "Trip Guide",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "supabase",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: tripguide,
-  //   source_code_link: "https://github.com/",
-  // },
+  {
+    name: "Atelier Shopping",
+    description:
+      "Web-based e-commerce platform that allows users to search, edit, and add products to their shopping cart from an API that I designed and hosted on AWS",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "SCSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: atelier,
+    source_code_link: "https://github.com/rfe2212-Scarlet-Witch/FEC2212",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
