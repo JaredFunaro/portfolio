@@ -198,7 +198,7 @@ const projects = [
   {
     name: "Milly Online Banking",
     description:
-      "Milly is a template-style Multi-Page Application (MPA) that establishes secure connections with Financial Institution cores for the seamless transfer of funds.",
+      "Milly is a template-syle SPA that establishes secure connections with Financial Institution cores for the seamless transfer of funds.",
     tags: [
       {
         name: "React",
