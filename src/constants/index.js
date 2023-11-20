@@ -161,7 +161,7 @@ const experiences = [
     points: [
       "Collaborated with software engineers, designers, QA, and IT to build out applications for clients",
       "Utilized Agile Methodology in order to ensure efficient workflow between teams",
-      "Created web applications alongside mobile applications for various companies including financial coorporations"
+      "Created web applications alongside mobile applications for various companies including financial corporations"
     ]
   }
 
