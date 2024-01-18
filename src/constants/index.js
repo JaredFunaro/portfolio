@@ -131,7 +131,7 @@ const experiences = [
     company_name: "Hack Reactor",
     icon: hackreactor,
     iconBg: "#E6DEDD",
-    date: "December 2022 - March 2023",
+    date: "December 2020 - March 2021",
     points: [
       "Developed and maintained web applications using React.js and other related technologies.",
       "Exercised teamwork and delegation skills while working with a team of software engineers to build out applications for clients",
@@ -144,7 +144,7 @@ const experiences = [
     company_name: "",
     icon: logo,
     iconBg: "#E6DEDD",
-    date: "March 2023 - June 2023",
+    date: "March 2021 - June 2021",
     points: [
       "Acquired customers and planned websites tailored to their individual needs.",
       "Created new websites utilizing the most current cutting-edge client-side technology.",
@@ -157,11 +157,11 @@ const experiences = [
     company_name: "Worldwide Interactive Services",
     icon: worldwide,
     iconBg: "#FFFFFF",
-    date: "June 2023 - Present",
+    date: "June 2021 - Present",
     points: [
-      "Collaborated with software engineers, designers, QA, and IT to build out applications for clients",
+      "Collaborated with software engineers, designers, and QA to build out applications for clients",
       "Utilized Agile Methodology in order to ensure efficient workflow between teams",
-      "Created web applications alongside mobile applications for various companies including financial corporations"
+      "Created web applications alongside mobile applications for various financial corporations"
     ]
   }
 
