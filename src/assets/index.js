@@ -28,7 +28,7 @@ import hackreactor from "./company/hack-reactor-icon.png";
 import tesla from "./company/tesla.png";
 import worldwide from "./company/worldwideLogo.png";
 
-import atelier from "./atelier.png";
+import uni from "./uni.png";
 import mvp from './mvp.png';
 import MillyScreenshot from './MillyScreenshot.png'
 
@@ -61,7 +61,7 @@ export {
   hackreactor,
   worldwide,
   tesla,
-  atelier,
+  uni,
   mvp,
   MillyScreenshot,
 };

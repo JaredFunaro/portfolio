@@ -21,7 +21,7 @@ import {
   tesla,
   worldwide,
   shopify,
-  atelier,
+  uni,
   mvp,
   MillyScreenshot,
   threejs,
@@ -238,24 +238,24 @@ const projects = [
     source_code_link: "https://github.com/JaredFunaro/PlaylistsForProducers",
   },
   {
-    name: "Atelier Shopping",
+    name: "Uni",
     description:
-      "Web-based e-commerce platform that allows users to search, edit, and add products to their shopping cart from an API that I designed and hosted on AWS",
+      "A real estate solution centered around 1% commissions due to new legislation. This website was designed, developed, and deployed entirely by me.",
     tags: [
       {
         name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "PostgreSQL",
+        name: "Redux Toolkit",
         color: "green-text-gradient",
       },
       {
-        name: "SCSS",
+        name: "Typescript",
         color: "pink-text-gradient",
       },
     ],
-    image: atelier,
+    image: uni,
     source_code_link: "https://github.com/rfe2212-Scarlet-Witch/FEC2212",
   },
 ];
