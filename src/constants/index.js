@@ -196,6 +196,27 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Uni",
+    description:
+      "A real estate solution centered around 1% commissions due to new legislation. This website was designed, developed, and deployed entirely by me.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux Toolkit",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: uni,
+    source_code_link: "https://github.com/rfe2212-Scarlet-Witch/FEC2212",
+  },
+  {
     name: "Milly Online Banking",
     description:
       "Milly is a template-syle SPA that establishes secure connections with Financial Institution cores for the seamless transfer of funds.",
@@ -236,27 +257,6 @@ const projects = [
     ],
     image: mvp,
     source_code_link: "https://github.com/JaredFunaro/PlaylistsForProducers",
-  },
-  {
-    name: "Uni",
-    description:
-      "A real estate solution centered around 1% commissions due to new legislation. This website was designed, developed, and deployed entirely by me.",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Redux Toolkit",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: uni,
-    source_code_link: "https://github.com/rfe2212-Scarlet-Witch/FEC2212",
   },
 ];
 
